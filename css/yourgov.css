@@ -1,0 +1,15 @@
+.navigation {
+    border-bottom: 3px solid blue;
+}
+
+.navigation2 {
+    border-bottom: 3px solid yellow;
+}
+
+.bs-example  div[class^="col"] {
+    border: 1px solid white;
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
