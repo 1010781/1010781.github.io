@@ -18,38 +18,48 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Brand -->
     <a class="navbar-brand" href="index.html"><img src="Images/logo.png"height="80" width="117"/></a>
     <a class="navbar-brand" href="index.html"><h2 style="color: black">Your Gov</h2></a>
 
-    <!-- Links -->
     <div class="collapse navbar-collapse" id="nav-content">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" href="Defence.html">Defence</a>
+                <a class="nav-link" href="Defence.html">Department of Defence</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Environment.html">Environment & Energy</a>
+                <a class="nav-link" href="Environment.html">Department of Environment & Energy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Communication.html">Communication & the Arts</a>
+                <a class="nav-link" href="Communication.html">Department of Communication & the Arts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Human.html">Human Services</a>
+                <a class="nav-link" href="Human.html">Department of Human Services</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Parliament.html">Parliament House</a>
             </li>
         </ul>
     </div>
+
+    <div class="input-group mb-3" style="padding-top: 16px; width: 300px">
+        <input type="text" class="form-control" placeholder="Enter your search" aria-label="Search term" aria-describedby="basic-addon">
+        <div class="input-group-append">
+            <button type="button" class="btn btn-outline-primary" style="color: white">Search</button>
+        </div>
+    </div>
 </nav>
 
-<h1 style="text-align: center; font-size: 30px; padding-top: 30px">Department of Defence</h1>
 <div class="bs-example">
-    <!-- Bootstrap Grid -->
     <div class="row">
+        <div class="col-md-12" style="background-color: gainsboro">
+            <h1 style="text-align: center; padding-top: 25px">Department of Defence</h1><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" style="background-color: white"></div>
         <div class="col-md-4">
-            <h1 style="text-align: center">What is the Defence</h1><br>
+            <h1 style="text-align: center; font-size: 30px; padding-top: 25px">What is the Defence</h1><br>
             <p style="text-align: left"> Australia's defence policy is founded on the principle
                 of self-reliance in the direct defence of Australia, but with a capacity to do
                 more where there are shared interests with partners and allies. The primary role
@@ -58,27 +68,59 @@
                 but with a capacity to do more where there are shared interests with partners and allies.
             </p>
         </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-    </div>
-    <div class="row">
         <div class="col-md-4">
-            <h1 style="text-align: center">Our Mission</h1><br>
+            <h1 style="text-align: center; font-size: 30px; padding-top: 25px">Functions and Powers</h1><br>
+            <p style="text-align: left">
+                Where applicable, Ministers or authorised Defence employees may exercise decision-making
+                powers under the legislation that is administered by the Minister aided by the department.
+                The list of matters dealt with by the department and legislation administered by the Minister
+                is prescribed in the Administrative Arrangements Order.
+            </p>
+        </div>
+        <div class="col-md-2" style="background-color: white"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" style="background-color: white"></div>
+        <div class="col-md-4">
+            <h1 style="text-align: center; font-size: 30px; padding-top: 25px">Our Mission</h1><br>
             <p style="text-align: left">
             The Australian Defence Force (ADF) is constituted under the Defence Act 1903,
             its mission is to defend Australia and its national interests. In fulfilling
             this mission, Defence serves the Government of the day and is accountable to
             the Commonwealth Parliament which represents the Australian people to efficiently
             and effectively carry out the Government's defence policy.
-        </p>
+            </p>
         </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h1 style="text-align: center; font-size: 30px; padding-top: 25px">Matters dealt with by the Department</h1><br>
+            <p style="text-align: left">
+                Defence, including:
+            </p>
+            <ul style="text-align: left">
+                <li>international defence relations and defence co-operation</li>
+                <li>defence scientific research and development</li>
+                <li>defence procurement and purchasing</li>
+                <li>defence industry development and co-operation</li>
+            </ul>
+        </div>
+        <div class="col-md-2" style="background-color: white"></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-12" style="background-color: white">
+            <div style="text-align: center">
+                <p style="font-weight: bold">Please enter the pin to launch the missile</p>
+                <input style="height: 38px; padding-bottom: 6px" id="pinNumber" type="number">
+                <button type="button" class="btn btn-primary" onclick="checkPin()">Submit</button>
+                <p id="demo"></p>
+            </div>
+        </div>
     </div>
 </div>
-<p style="font-weight: bold">Please enter the pin to launch the missile</p>
-<input style="height: 38px; padding-bottom: 6px" id="pinNumber" type="number">
-<button type="button" class="btn btn-primary" onclick="checkPin()">Submit</button>
-<p id="demo"></p>
+
+<footer style="background-color: yellow">
+    <p style="font-size: 18px; font-family: Arial; color: black; text-align: center">© 2019 "Australian" "Government"</p>
+</footer>
 </body>
 </html>
