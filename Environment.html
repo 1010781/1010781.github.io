@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/yourgov.css">
     <script src="js/bootstrap.js"></script>
+    <script src="Environment.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -23,19 +24,19 @@
     <div class="collapse navbar-collapse" id="nav-content">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" href="Defence.html">Department of Defence</a>
+                <a class="nav-link navColour" href="Defence.html">Department of Defence</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Environment.html">Department of Environment & Energy</a>
+                <a class="nav-link navColour" href="Environment.html">Department of Environment & Energy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Communication.html">Department of Communication & the Arts</a>
+                <a class="nav-link navColour" href="Communication.html">Department of Communication & the Arts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Human.html">Department of Human Services</a>
+                <a class="nav-link navColour" href="Human.html">Department of Human Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Parliament.html">Parliament House</a>
+                <a class="nav-link navColour" href="Parliament.html">Parliament House</a>
             </li>
         </ul>
     </div>
@@ -111,6 +112,41 @@
                 <li>Industrial energy efficiency
                 <li>Energy efficiency
             </ul>
+        </div>
+        <div class="col-md-2" style="background-color: white"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" style="background-color: gainsboro">
+            <h1 style="text-align: center; padding-top: 25px; font-size: 30px">Power Grid Usage</h1><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" style="background-color: white"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-2" style="background-color: white"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" style="background-color: white"></div>
+        <div class="col-md-4" style="background-color: white">
+            <form style="padding-left: 260px; text-align: left">
+                <fieldset class="form-group">
+                    <label for="first_name">Username:</label>
+                    <input type="text" class="form-control" style="width: 300px" id="first_name" name="first_name">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="last_name">Password:</label>
+                    <input type="text" class="form-control" style="width: 300px" id="last_name" name="last_name">
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+                <button type="button" class="btn btn-primary" onclick="checkPin()">Submit</button>
+                <p id="demo"></p>
         </div>
         <div class="col-md-2" style="background-color: white"></div>
     </div>
