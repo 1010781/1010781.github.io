@@ -1,16 +1,26 @@
 function checkPin() {
-    var username, password, text;
+    var username, password, button, invalid;
     username = document.getElementById("userName").value;
     if (username == "admin") {
-        text = "Missile Launched! <p><img class=\"img-fluid\" src=\"myImage/missileLaunched.gif\"></p>";
+        button = "<p><button type=\"button\" class=\"btn btn-success\" style=\"margin-top: 80px; color: black\" onclick=\"checkPin()\">Enable</button></p>";
     } else {
-        text = "Invalid Pin <p><img class=\"img-fluid\" src=\"myImage/wrong.gif\"></p>";
+        invalid = "Incorrect Username or Password";
     }
     password = document.getElementById("passWord").value;
     if (password == "Password1234") {
-        text = "Missile Launched! <p><img class=\"img-fluid\" src=\"myImage/missileLaunched.gif\"></p>";
+        button = "<p><button type=\"button\" class=\"btn btn-success\" style=\"margin-top: 80px; color: black;\" onclick=\"checkPin()\">Enable</button></p>";
     } else {
-        text = "Invalid Pin";
+        invalid = "Incorrect Username or Password";
     }
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("button").innerHTML = button;
+    document.getElementById("invalid").innerHTML = invalid;
+}
+
+function changeImage() {
+    var button = document.getElementById('button');
+    if (button.src.match("bulbon")) {
+        button.src = "myImage/pic_bulboff.gif";
+    } else {
+        button.src = "myImage/pic_bulbon.gif";
+    }
 }
