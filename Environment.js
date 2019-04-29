@@ -15,12 +15,3 @@ function checkPin() {
     document.getElementById("button").innerHTML = button;
     document.getElementById("invalid").innerHTML = invalid;
 }
-
-function changeImage() {
-    var button = document.getElementById('button');
-    if (button.src.match("bulbon")) {
-        button.src = "myImage/pic_bulboff.gif";
-    } else {
-        button.src = "myImage/pic_bulbon.gif";
-    }
-}
