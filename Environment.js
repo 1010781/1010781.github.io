@@ -18,9 +18,10 @@ function checkPin() {
 
 function changeButton() {
     var myButton = document.getElementById('MyButton');
-    if (myButton.button.match("<p><button type=\"button\" class=\"btn btn-success\" style=\"margin-top: 80px; color: black\" onclick=\"changeButton()\">Enable</button></p>")) {
-        myButton.button = "<p><button type=\"button\" class=\"btn btn-success\" style=\"margin-top: 80px; color: black\" onclick=\"changeButton()\">Enable</button></p>";
+    var txt = myButton.textContent || myButton.innerText;
+    if (txt.match("Enable")) {
+        myButton.textContent = "Disable";
     } else {
-        myButton.button = "<p><button type=\"button\" class=\"btn btn-danger\" style=\"margin-top: 80px; color: black\" onclick=\"changeButton()\">disable</button></p>";
+        myButton.textContent = "Enable";
     }
 }
