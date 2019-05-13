@@ -23,11 +23,11 @@ function changeButton() {
     if (txt.match("Enable")) {
         myButton.textContent = "Disable";
         myButton.style.backgroundColor = "red";
-        powerStation2disbale()
+        powerStation2()
     } else {
         myButton.textContent = "Enable";
         myButton.style.backgroundColor = "green";
-        powerStation2()
+        powerStation2disable()
     }
 }
 
@@ -68,6 +68,7 @@ function powerStation2() {
     var currentPowerload = [Math.floor(Math.random() * 6)];
     var currentPercentage = document.getElementById("CurrentPercentage2")
 
+
     if (currentStatus <= 1) {
         document.getElementById('CurrentStatus2').innerHTML = 'Enable';
         document.getElementById('CurrentStatus2').style.color = 'green';
@@ -83,11 +84,25 @@ function powerStation2() {
         document.getElementById('CurrentPowerload2').innerHTML = 'High';
         document.getElementById('CurrentPowerload2').style.color = 'red';
     }
+
     currentPercentage.innerHTML = (Math.floor(Math.random() * 100) + 1);
 }
 
 function powerStation2disable() {
-    var currentStatus = [Math.floor(Math.random() * 1)];document.getElementById("CurrentStatus2d").innerHTML ;
-    var currentPowerload = document.getElementById("CurrentPowerload2d").innerHTML ;
-    var currentPercentage = document.getElementById("CurrentPercentage2d").innerHTML ;
+    var currentStatus = [Math.floor(Math.random() * 1)];
+    var currentPowerload = [Math.floor(Math.random() * 1)];
+    var currentPercentage = [Math.floor(Math.random() * 1)];
+
+
+    if (currentStatus <= 1) {
+        document.getElementById('CurrentStatus2d').innerHTML = 'Disable';
+    }
+
+    if (currentPowerload <= 1) {
+        document.getElementById('CurrentPowerload2d').innerHTML = 'N/A';
+    }
+
+    if (currentPercentage <= 1) {
+        document.getElementById('CurrentPercentage2').innerHTML = 'N/A';
+    }
 }
