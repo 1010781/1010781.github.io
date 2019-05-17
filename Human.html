@@ -12,40 +12,80 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark navigation2" style="background: blue;">
+
+<nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark" style="background-image: linear-gradient(to right, #053954, #1c809d)">
+
+    <a class="navbar-brand" href="index.html" style="padding-left: 300px"><img src="Images/logo2.png"height="80" width="117"/></a>
+    <a class="navbar-brand" href="index.html"><h2 style="color: white">Your Gov</h2></a>
+
+    <div style="padding-left: 700px">
+        <div class="input-group mb-3" style="padding-top: 16px; width: 300px">
+            <input type="text" class="form-control" placeholder="Enter your search" aria-label="Search term" aria-describedby="basic-addon">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-outline-warning" style="color: white">Search</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-sm nav-tabs navbar-light bg-faded navbar navbar-expand-sm navbar-dark navigation2" style="background: white;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand" href="index.html"><img src="Images/logo.png"height="80" width="117"/></a>
-    <a class="navbar-brand" href="index.html"><h2 style="color: black">Your Gov</h2></a>
-
-    <div class="collapse navbar-collapse" id="nav-content">
+    <div class="collapse navbar-collapse" id="nav-content" style="padding-left: 300px">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link navColour" href="Defence.html">Department of Defence</a>
+                <a class="nav-link" href="Defence.html">Department of Defence</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navColour" href="Environment.html">Department of Environment & Energy</a>
+                <a class="nav-link" href="Environment.html">Department of Environment & Energy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navColour" href="Communication.html">Department of Communication & the Arts</a>
+                <a class="nav-link" href="Communication.html">Department of Communication & the Arts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navColour" href="Human.html">Department of Human Services</a>
+                <a class="nav-link active" href="Human.html">Department of Human Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navColour" href="Parliament.html">Parliament House</a>
+                <a class="nav-link" href="Parliament.html">Parliament House</a>
             </li>
         </ul>
     </div>
-
-    <div class="input-group mb-3" style="padding-top: 16px; width: 300px">
-        <input type="text" class="form-control" placeholder="Enter your search" aria-label="Search term" aria-describedby="basic-addon">
-        <div class="input-group-append">
-            <button type="button" class="btn btn-outline-primary" style="color: white">Search</button>
-        </div>
-    </div>
 </nav>
+
+<div style="background-color: #f0f3f5; border-top: 6px solid #224a61">
+    <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-content" style="padding-left: 300px">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="padding-left: 150px">Accessibility</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding-left: 150px">Copyright</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding-left: 150px">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding-left: 150px">Site map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding-left: 150px">Terms of use</a>
+                </li>
+            </ul>
+    </nav>
+
+    <footer style="border-top: 2px solid #d9d9dc">
+        <p style="font-size: 18px; font-family: Arial; color: black; text-align: center; padding-top: 25px">© 2019 "Australian" "Government"</p>
+    </footer>
+</div>
 </body>
 </html>
