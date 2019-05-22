@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<body onload="heatmap()">
+<body onload="heatMap()">
 
 <nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark" style="background-image: linear-gradient(to right, #053954, #1c809d)">
 
@@ -93,23 +93,30 @@
 
     <div class="row">
         <div class="col-md-2" style="background-color: white"></div>
-        <div class="col-md-8">
-            <p style="text-align: left; padding-top: 20px"></p>
+        <div class="col-md-8" style="background-color: white">
+            <p style="text-align: center; padding-top: 20px">Below is system information about the network
+                in Canberra. Please note, this page refreshes every minute with the latest grid information.</p>
         </div>
         <div class="col-md-2" style="background-color: white"></div>
     </div>
 
     <div class="row">
         <div class="col-md-2" style="background-color: white"></div>
+        <div class="col-md-2">
+            <dl>
+                <dt style="text-align: left; padding-top: 25px; font-size: 17px">Nbn: <a style="font-weight: normal" id="Nbn"></a></dt>
+                <dt style="text-align: left; padding-top: 25px; font-size: 17px">Phone: <a style="font-weight: normal" id="Phone"></a></dt>
+            </dl>        </div>
         <div class="col-md-3">
-            <p style="text-align: left; padding-top: 20px"></p>
-        </div>
+            <dl>
+                <dt style="text-align: left; padding-top: 25px; font-size: 17px">Adsl: <a style="font-weight: normal" id="Adsl"></a></dt>
+                <dt style="text-align: left; padding-top: 25px; font-size: 17px">Radio: <a style="font-weight: normal" id="Radio"></a></dt>
+            </dl>        </div>
         <div class="col-md-3">
-            <p style="text-align: left; padding-top: 20px"></p>
-        </div>
-        <div class="col-md-3">
-            <p style="text-align: left; padding-top: 20px"></p>
-        </div>
+            <dl>
+                <dt style="text-align: left; padding-top: 25px; font-size: 17px">Television: <a style="font-weight: normal" id="Television"></a></dt>
+                <dt style="text-align: left; padding-top: 25px; font-size: 17px">Foxtel: <a style="font-weight: normal" id="Foxtel"></a></dt>
+            </dl>        </div>
         <div class="col-md-2" style="background-color: white"></div>
     </div>
 </div>
