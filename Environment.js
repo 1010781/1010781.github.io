@@ -24,6 +24,9 @@ function changeButton() {
         myButton.textContent = "Disable";
         myButton.style.backgroundColor = "red";
         powerStation2()
+        window.setInterval(function () {
+            powerStation2();
+        }, 60000);
     } else {
         myButton.textContent = "Enable";
         myButton.style.backgroundColor = "green";
@@ -35,7 +38,7 @@ function powerStation1() {
     var currentStatus = [Math.floor(Math.random()*1)];
     var currentPowerload = [Math.floor(Math.random()*6)];
     var currentPercentage = document.getElementById("CurrentPercentage")
-    var reccomendationUsage = [Math.floor(Math.random()*3)];
+    var reccomendationUsage = [Math.floor(Math.random()*6)];
 
     if (currentStatus <=1) {
         document.getElementById('CurrentStatus').innerHTML = 'Enable';
@@ -53,11 +56,11 @@ function powerStation1() {
         document.getElementById('CurrentPowerload').style.color = 'red';
     }
 
-    if (reccomendationUsage <=1) {
+    if (reccomendationUsage <=2) {
         document.getElementById('ReccomendationUsage').innerHTML = 'Low';
-    } else if (reccomendationUsage <=2) {
+    } else if (reccomendationUsage <=4) {
         document.getElementById('ReccomendationUsage').innerHTML = 'Medium';
-    } else if (reccomendationUsage <=3) {
+    } else if (reccomendationUsage <=6) {
         document.getElementById('ReccomendationUsage').innerHTML = 'High';
     }
     currentPercentage.innerHTML = (Math.floor(Math.random()*100)+1);
@@ -96,14 +99,17 @@ function powerStation2disable() {
 
     if (currentStatus <= 1) {
         document.getElementById('CurrentStatus2').innerHTML = 'Disable';
+        document.getElementById('CurrentStatus2').style.color = 'black';
     }
 
     if (currentPowerload <= 1) {
         document.getElementById('CurrentPowerload2').innerHTML = 'N/A';
+        document.getElementById('CurrentPowerload2').style.color = 'black';
     }
 
     if (currentPercentage <= 1) {
         document.getElementById('CurrentPercentage2').innerHTML = 'N/A';
+        document.getElementById('CurrentPercentage2').style.color = 'black';
     }
 }
 
@@ -125,3 +131,7 @@ function powerStation2display() {
         document.getElementById('CurrentPercentage2').innerHTML = 'N/A';
     }
 }
+
+window.setInterval(function () {
+    powerStation1();
+}, 60000);
