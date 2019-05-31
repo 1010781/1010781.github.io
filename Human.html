@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/yourgov.css">
     <script src="js/bootstrap.js"></script>
+    <script src="Human.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="idRandomizer()">
 
 <nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark" style="background-image: linear-gradient(to right, #053954, #1c809d)">
 
@@ -103,7 +104,7 @@
         <div class="col-md-2" style="background-color: white"></div>
         <div class="col-md-8" style="background-color: white">
             <p style="text-align: center; padding-top: 20px">Below displays your personal medical records. You can update any inaccurate
-                information
+                information and once finished, press the submit button
             </p>
         </div>
         <div class="col-md-2" style="background-color: white"></div>
@@ -113,10 +114,11 @@
         <div class="col-md-2" style="background-color: white"></div>
         <div class="col-md-8" style="background-color: white">
             <h1 style="text-align: left; padding-left: 5px; font-size: 20px; color: black">Name</h1>
+            <p id="outputTest"></p>
             <form>
                 <div class="row">
                     <div class="col" style="background-color: white">
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" id="FirstName" placeholder="">
                         <h1 style="text-align: left; padding-left: 5px; font-size: 17px; color: black">First Name</h1>
                     </div>
                     <div class="col" style="background-color: white">
@@ -124,7 +126,7 @@
                         <h1 style="text-align: left; padding-left: 5px; font-size: 17px; color: black">Last Name</h1>
                     </div>
                     <div class="col-3" style="background-color: white">
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="date" class="form-control" placeholder="dd/mm/yyyy">
                         <h1 style="text-align: left; padding-left: 5px; font-size: 17px; color: black">Date of Birth</h1>
                     </div>
                 </div><br>
@@ -201,8 +203,12 @@
                 </form>
             </div>
         <div class="col-md-2" style="background-color: white"></div>
+    </div><br><br>
+    <div style="text-align: center">
+        <button type="button" class="btn btn-primary" onclick="checkPin()">Submit</button>
     </div>
 </div><br><br>
+
 
 <div style="background-color: #f0f3f5; border-top: 6px solid #224a61">
     <nav class="navbar navbar-expand-sm navbar-light bg-faded">
