@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href="../myImage/logo.png" height="75" width="75"/>
+    <title>Communication</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/yourgov.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/Communication.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body onload="heatMap()">
+<nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark top-heading">
+    <a class="navbar-brand logo-position" href="index.html"><img src="../myImage/logo2.png" height="80" width="117"/></a>
+    <a class="navbar-brand" href="index.html"><h2 class="heading-colour">Your Gov</h2></a>
+
+    <form class="form-inline searchBar-position" role="search">
+        <input type="text" class="form-control" placeholder="Enter your search" aria-label="Search term" aria-describedby="basic-addon">
+        <button type="button" class="btn btn-outline-warning heading-colour">Search</button>
+    </form>
+</nav>
+
+<nav class="navbar navbar-expand-sm nav-tabs navbar-light bg-faded navbar navbar-expand-sm navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse navbar-position" id="nav-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" href="Defence.html">Department of Defence</a></li>
+            <li class="nav-item"><a class="nav-link" href="Environment.html">Department of Environment & Energy</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Communication.html">Department of Communication & the Arts</a></li>
+            <li class="nav-item"><a class="nav-link" href="Human.html">Department of Human Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="Parliament.html">Parliament House</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row container-fluid">
+    <div class="col-md-12 text-center"><img src="../myImage/Communication.jpg" class="img-fluid" height="210" width="1200"/></div>
+</div>
+
+<div class="bs-example container-fluid">
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Department of Communication & the Arts</h1><br></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-4">
+            <h1 class="subHeading">Who are we</h1><br>
+            <p class="paragraph-text">
+                Our role is to provide an environment in which all Australians can access and benefit from
+                communications services, creative experiences and culture. Our purposes are to enable all
+                Australians to connect to effective communications services and technologies, for inclusiveness
+                and sustainable economic growth; and to support inclusiveness and growth in Australia's creative
+                sector, and protect and promote Australian content and culture.
+            </p>
+        </div>
+        <div class="col-4">
+            <h1 class="subHeading">What we do</h1><br>
+            <p class="paragraph-text">
+                We provide an environment in which all Australians can access and benefit from communications
+                services, creative experiences and culture. We do this through delivering strategic advice and
+                policy development, effective program and grants management, regulatory management and
+                collaborative stakeholder engagement.
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Network Heatmap</h1><br></div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p class="information-text">
+                Below is a system information of the network in Canberra. This page will refresh every 5 seconds
+                with the latest network status
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <dl>
+                <dt class="network1">Nbn: <a style="font-weight: normal" id="Nbn"></a></dt>
+                <dt class="network1">Phone: <a style="font-weight: normal" id="Phone"></a></dt>
+            </dl>
+        </div>
+        <div class="col-md-3">
+            <dl>
+                <dt class="network2">Adsl: <a style="font-weight: normal" id="Adsl"></a></dt>
+                <dt class="network2">Radio: <a style="font-weight: normal" id="Radio"></a></dt>
+            </dl>
+        </div>
+        <div class="col-md-3">
+            <dl>
+                <dt class="network2">Television: <a style="font-weight: normal" id="Television"></a></dt>
+                <dt class="network2">Foxtel: <a style="font-weight: normal" id="Foxtel"></a></dt>
+            </dl>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div><br><br>
+
+<footer class="footer-border">
+    <div class="footer">
+        <div class="navbar navbar-expand-sm navbar-light bg-faded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-position">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Accessibility</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Copyright</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Help</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Site map</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Terms of use</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-heading">© 2019 Ryan Nguyen</p>
+    </div>
+</footer>
+</body>
+</html>

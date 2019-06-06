@@ -11,6 +11,7 @@ function idRandomizer(){
         document.getElementById('Address').value = '199/140 Thynne Street, Bruce ACT 2617';
         document.getElementById('Username').value = 'RyanNg145';
         document.getElementById('Password').value = '6fvbc8AO';
+        document.getElementById('Gender').innerText = 'Male';
         document.getElementById('Medicare').value = '2934 537271 1';
         document.getElementById('Healthcare').value = '145 789 634A';
         document.getElementById('GPName').value = 'Dr Nessa Lakshmi';
@@ -25,6 +26,7 @@ function idRandomizer(){
         document.getElementById('Address').value = '149/1 Anthony Rolfe Avenue, Gungahlin ACT 2912';
         document.getElementById('Username').value = 'CatherRy909';
         document.getElementById('Password').value = '0cPweqvU';
+        document.getElementById('Gender').innerText = 'Male';
         document.getElementById('Medicare').value = '6097 118571 1';
         document.getElementById('Healthcare').value = '365 990 113A';
         document.getElementById('GPName').value = 'Dr Leokadia Sifiso';
@@ -39,6 +41,7 @@ function idRandomizer(){
         document.getElementById('Address').value = '33 Henry Kendall Street, Franklin ACT 2913';
         document.getElementById('Username').value = 'Okennedy12';
         document.getElementById('Password').value = 'D2f4XrwY';
+        document.getElementById('Gender').innerText = 'Male';
         document.getElementById('Medicare').value = '5250 070161 1';
         document.getElementById('Healthcare').value = '332 659 800';
         document.getElementById('GPName').value = 'Dr Gerd Ernestine';
@@ -53,6 +56,7 @@ function idRandomizer(){
         document.getElementById('Address').value = '21/1 Mouat Street, Lyneham ACT 2602';
         document.getElementById('Username').value = 'Rcasey101';
         document.getElementById('Password').value = 'gKN3nc6V';
+        document.getElementById('Gender').innerText = 'Other';
         document.getElementById('Medicare').value = '3506 190281 1';
         document.getElementById('Healthcare').value = '305 119 624';
         document.getElementById('GPName').value = 'Dr Shanene Dikla';
@@ -67,6 +71,7 @@ function idRandomizer(){
         document.getElementById('Address').value = '1/66 Allara Street, City ACT 2601';
         document.getElementById('Username').value = 'MabelT61';
         document.getElementById('Password').value = 'gVLzJa7v';
+        document.getElementById('Gender').innerText = 'Male';
         document.getElementById('Medicare').value = '4618 655251 1';
         document.getElementById('Healthcare').value = '443 999 768A';
         document.getElementById('GPName').value = 'Dr Zelda Żaneta';
@@ -81,6 +86,7 @@ function idRandomizer(){
         document.getElementById('Address').value = '10 Carrington Street, Deakin ACT 2600';
         document.getElementById('Username').value = 'Jgibbs2199';
         document.getElementById('Password').value = 'kBtUj11Y';
+        document.getElementById('Gender').innerText = 'Female';
         document.getElementById('Medicare').value = '5488 201681 1';
         document.getElementById('Healthcare').value = '989 366 145A';
         document.getElementById('GPName').value = 'Dr Raoul Abraham';
@@ -88,7 +94,6 @@ function idRandomizer(){
 }
 
 function submitButton() {
-    var text
-    text = hi;
-    document.getElementById("demo").innerHTML = text;
+    setTimeout('location.reload()', 1000);
+    document.getElementById('submitSuccess').innerHTML = "Your changes has been successful, this page will refresh";
 }

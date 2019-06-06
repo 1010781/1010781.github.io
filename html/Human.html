@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href="../myImage/logo.png" height="75" width="75"/>
+    <title>Human</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/yourgov.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/Human.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body onload="idRandomizer()">
+<nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark top-heading">
+    <a class="navbar-brand logo-position" href="index.html"><img src="../myImage/logo2.png" height="80" width="117"/></a>
+    <a class="navbar-brand" href="index.html"><h2 class="heading-colour">Your Gov</h2></a>
+
+    <form class="form-inline searchBar-position" role="search">
+        <input type="text" class="form-control" placeholder="Enter your search" aria-label="Search term" aria-describedby="basic-addon">
+        <button type="button" class="btn btn-outline-warning heading-colour">Search</button>
+    </form>
+</nav>
+
+<nav class="navbar navbar-expand-sm nav-tabs navbar-light bg-faded navbar navbar-expand-sm navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse navbar-position" id="nav-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" href="Defence.html">Department of Defence</a></li>
+            <li class="nav-item"><a class="nav-link" href="Environment.html">Department of Environment & Energy</a></li>
+            <li class="nav-item"><a class="nav-link" href="Communication.html">Department of Communication & the Arts</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Human.html">Department of Human Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="Parliament.html">Parliament House</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row container-fluid">
+    <div class="col-md-12 text-center"><img src="../myImage/Human.jpg" class="img-fluid" height="210" width="1200"/></div>
+</div>
+
+<div class="bs-example container-fluid">
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Department of Human Services</h1><br></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-4">
+            <h1 class="subHeading">Our department</h1><br>
+            <p class="paragraph-text">
+                We are responsible for the development of service delivery policy and provide access
+                to social, health and other payments and services. We work closely with Australian
+                Hearing in providing strategic advice to the Minister and Secretary on service delivery
+                policy and regulatory requirements for services delivered under the Australian Government
+                Hearing Services Program.
+            </p>
+        </div>
+        <div class="col-4">
+            <h1 class="subHeading">Our priorities</h1><br>
+            <p class="paragraph-text">
+                We continually build on our foundation of service excellence to shape how government
+                services are delivered to the Australian community. We support individuals, families
+                and communities to achieve greater self-sufficiency; through the delivery of policy
+                advice and high quality accessible social, health and child support services and other
+                payments; and support providers and businesses through convenient and efficient service
+                delivery.
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Personal Information</h1><br></div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p class="information-text">
+                Below displays your personal medical records. You can update any inaccurate information
+                and once finished, press the submit button
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1 class="form-line">Name</h1>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="FirstName" placeholder="">
+                        <h1 class="form-line2">First Name</h1>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="LastName" placeholder="">
+                        <h1 class="form-line2">Last Name</h1>
+                    </div>
+                    <div class="col-3">
+                        <input type="date" class="form-control" id="DateOfBirth" placeholder="dd/mm/yyyy">
+                        <h1 class="form-line2">Date of Birth</h1>
+                    </div>
+                </div><br>
+
+                <h1 class="form-line">Email</h1>
+                <div class="row">
+                    <div class="col"><input type="text" class="form-control" id="Email" placeholder=""></div>
+                </div><br>
+
+                <h1 class="form-line">Phone</h1>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="MobileNumber" placeholder="">
+                        <h1 class="form-line2">Mobile Number</h1>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="HPhoneNumber" placeholder="">
+                        <h1 class="form-line2">Home Phone Number</h1>
+                    </div>
+                </div><br>
+
+                <h1 class="form-line">Address</h1>
+                <div class="row">
+                    <div class="col"><input type="text" class="form-control" id="Address" placeholder=""></div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">Username</h1>
+                        <input type="text" class="form-control" id="Username" placeholder="">
+                    </div>
+                    <div class="col">
+                        <h1 class="form-line">Password</h1>
+                        <input type="text" class="form-control" id="Password" placeholder="">
+                    </div>
+                    <div class="col">
+                        <h1 class="form-line">Gender</h1>
+                        <select class="custom-select">
+                            <option selected id="Gender"></option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">Medicare No.</h1>
+                        <input type="text" class="form-control" id="Medicare" placeholder="">
+                    </div>
+                    <div class="col">
+                        <h1 class="form-line">Private Healthcare No.</h1>
+                        <input type="text" class="form-control" id="Healthcare" placeholder="">
+                    </div>
+                    <div class="col">
+                        <h1 class="form-line">GP's Name</h1>
+                        <input type="text" class="form-control" id="GPName" placeholder="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br><br>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" onclick="submitButton()">Submit Change</button>
+    </div><br>
+    <p class="information-text" id="submitSuccess"></p>
+</div><br><br>
+
+<footer class="footer-border">
+    <div class="footer">
+        <div class="navbar navbar-expand-sm navbar-light bg-faded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-position">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Accessibility</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Copyright</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Help</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Site map</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Terms of use</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-heading">© 2019 Ryan Nguyen</p>
+    </div>
+</footer>
+</body>
+</html>

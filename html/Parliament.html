@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href="../myImage/logo.png" height="75" width="75"/>
+    <title>Parliament</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/yourgov.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/Parliament.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body onload="votingElection()">
+<nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark top-heading">
+    <a class="navbar-brand logo-position" href="index.html"><img src="../myImage/logo2.png" height="80" width="117"/></a>
+    <a class="navbar-brand" href="index.html"><h2 class="heading-colour">Your Gov</h2></a>
+
+    <form class="form-inline searchBar-position" role="search">
+        <input type="text" class="form-control" placeholder="Enter your search" aria-label="Search term" aria-describedby="basic-addon">
+        <button type="button" class="btn btn-outline-warning heading-colour">Search</button>
+    </form>
+</nav>
+
+<nav class="navbar navbar-expand-sm nav-tabs navbar-light bg-faded navbar navbar-expand-sm navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse navbar-position" id="nav-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" href="Defence.html">Department of Defence</a></li>
+            <li class="nav-item"><a class="nav-link" href="Environment.html">Department of Environment & Energy</a></li>
+            <li class="nav-item"><a class="nav-link" href="Communication.html">Department of Communication & the Arts</a></li>
+            <li class="nav-item"><a class="nav-link" href="Human.html">Department of Human Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Parliament.html">Parliament House</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row container-fluid">
+    <div class="col-md-12 text-center"><img src="../myImage/Parliament.jpg" class="img-fluid" height="210" width="1200"/></div>
+</div>
+
+<div class="bs-example container-fluid">
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Parliament House</h1><br></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-4">
+            <h1 class="subHeading">Our purpose</h1><br>
+            <p class="paragraph-text">
+                Maintain an impartial and independent electoral system for eligible voters through active
+                electoral roll management, efficient delivery of polling services and targeted education
+                and public awareness programs.
+            </p>
+        </div>
+        <div class="col-4">
+            <h1 class="subHeading">How to vote</h1><br>
+            <p class="paragraph-text">
+                All Australian citizens over the age of 18 who are enrolled to vote, elect people to
+                represent them in the two houses of the Commonwealth Parliament – the Senate and the House
+                of Representatives. The AEC provides assistance for people living with disability to ensure
+                they are not disadvantaged from participating in the electoral system. The AEC can assist
+                you to enrol, vote and help you find more information. It is compulsory for all eligible
+                Australians to enrol and vote in federal elections and referendums.
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-4">
+            <h1 class="subHeading">The House of Representatives</h1><br>
+            <p class="paragraph-text">
+                Each Member of the House of Representatives is elected to represent an area known as an electoral
+                division. Each electoral division within a state or territory contains about the same number of
+                people on the electoral roll. The electors in each division elect one person to represent them in
+                the House of Representatives.
+            </p>
+        </div>
+        <div class="col-4">
+            <h1 class="subHeading">The Senate</h1><br>
+            <p class="paragraph-text">
+                Each state and territory elects multiple Senators using a preferential voting system. Each state has
+                twelve Senate positions with six year terms and each territory has two Senate positions with three year
+                terms. At a federal election only half of the Senate positions for each state typically become vacant,
+                resulting in six Senate vacancies per state, while all territory Senate positions become vacant.
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Voting Form</h1><br></div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p class="information-text">
+                Below is your voting election form. You will order the candidates from (1) to (4), with (1) being the
+                person you wish best to become Prime Minister, and (4) being the person you want least to become Prime
+                Minister
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-md-12"><h1 class="subHeading">Australian Federal Election Voting Form 2019</h1></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">Name</h1>
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col" style="padding-top: 39px">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="col-3">
+                        <h1 class="form-line">Date of Birth</h1>
+                        <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">Email</h1>
+                        <input type="text" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col">
+                        <h1 class="form-line">Phone</h1>
+                        <input type="text" class="form-control" placeholder="Mobile Number">
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">1st Preference</h1>
+                        <select class="custom-select"  id="Candidate1">
+                            <option selected>Select One...</option>
+                            <option value="1">Maisey Willis</option>
+                            <option value="2">Archie Marsden</option>
+                            <option value="3">Ray Kline</option>
+                            <option value="4">Christiana Mcarthur</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">2nd Preference</h1>
+                        <select class="custom-select" id="Candidate2">
+                            <option selected>Select One...</option>
+                            <option value="1">Maisey Willis</option>
+                            <option value="2">Archie Marsden</option>
+                            <option value="3">Ray Kline</option>
+                            <option value="4">Christiana Mcarthur</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">3rd Preference</h1>
+                        <select class="custom-select" id="Candidate3">
+                            <option selected>Select One...</option>
+                            <option value="1">Maisey Willis</option>
+                            <option value="2">Archie Marsden</option>
+                            <option value="3">Ray Kline</option>
+                            <option value="4">Christiana Mcarthur</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="form-line">4th Preference</h1>
+                        <select class="custom-select" id="Candidate4">
+                            <option selected>Select One...</option>
+                            <option value="1">Maisey Willis</option>
+                            <option value="2">Archie Marsden</option>
+                            <option value="3">Ray Kline</option>
+                            <option value="4">Christiana Mcarthur</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br><br>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" onclick="votingElection()">Submit Vote</button>
+    </div><br>
+    <p class="information-text" id="submitVote"></p>
+</div><br><br>
+
+<footer class="footer-border">
+    <div class="footer">
+        <div class="navbar navbar-expand-sm navbar-light bg-faded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-position">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Accessibility</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Copyright</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Help</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Site map</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Terms of use</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-heading">© 2019 Ryan Nguyen</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href="../myImage/logo.png" height="75" width="75"/>
+    <title>Defence</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/yourgov.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/Defence.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-faded navbar navbar-expand-sm navbar-dark top-heading">
+    <a class="navbar-brand logo-position" href="index.html"><img src="../myImage/logo2.png" height="80" width="117"/></a>
+    <a class="navbar-brand" href="index.html"><h2 class="heading-colour">Your Gov</h2></a>
+
+    <form class="form-inline searchBar-position" role="search">
+        <input type="text" class="form-control" placeholder="Enter your search" aria-label="Search term" aria-describedby="basic-addon">
+        <button type="button" class="btn btn-outline-warning heading-colour">Search</button>
+    </form>
+</nav>
+
+<nav class="navbar navbar-expand-sm nav-tabs navbar-light bg-faded navbar navbar-expand-sm navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse navbar-position" id="nav-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" href="Defence.html">Department of Defence</a></li>
+            <li class="nav-item"><a class="nav-link" href="Environment.html">Department of Environment & Energy</a></li>
+            <li class="nav-item"><a class="nav-link" href="Communication.html">Department of Communication & the Arts</a></li>
+            <li class="nav-item"><a class="nav-link" href="Human.html">Department of Human Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="Parliament.html">Parliament House</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row container-fluid">
+    <div class="col-md-12 text-center"><img src="../myImage/Defence.jpg" class="img-fluid" height="210" width="1200"/></div>
+</div>
+
+<div class="bs-example container-fluid">
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Department of Defence</h1><br></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <h1 class="subHeading">What is the Defence</h1><br>
+            <p class="paragraph-text">
+                Australia's defence policy is founded on the principle
+                of self-reliance in the direct defence of Australia, but with a capacity to do
+                more where there are shared interests with partners and allies. The primary role
+                of Defence is to defend Australia against armed attack. Australia's defence policy
+                is founded on the principle of self-reliance in the direct defence of Australia,
+                but with a capacity to do more where there are shared interests with partners and allies.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h1 class="subHeading">Functions and Powers</h1><br>
+            <p class="paragraph-text">
+                Where applicable, Ministers or authorised Defence employees may exercise decision-making
+                powers under the legislation that is administered by the Minister aided by the department.
+                The list of matters dealt with by the department and legislation administered by the Minister
+                is prescribed in the Administrative Arrangements Order.
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <h1 class="subHeading">Our Mission</h1><br>
+            <p class="paragraph-text">
+                The Australian Defence Force (ADF) is constituted under the Defence Act 1903,
+                its mission is to defend Australia and its national interests. In fulfilling
+                this mission, Defence serves the Government of the day and is accountable to
+                the Commonwealth Parliament which represents the Australian people to efficiently
+                and effectively carry out the Government's defence policy.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h1 class="subHeading">Matters dealt with by the Department</h1><br>
+            <p class="paragraph-text">Defence, including:</p>
+            <ul class="paragraph-text">
+                <li>international defence relations and defence co-operation</li>
+                <li>defence scientific research and development</li>
+                <li>defence procurement and purchasing</li>
+                <li>defence industry development and co-operation</li>
+            </ul>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-12 mainHeading-background"><h1 class="mainHeading">Missile Launcher</h1><br></div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center">
+                <p style="font-weight: bold">Please enter the 4 digit pin to launch the missile</p>
+                <input style="height: 38px; padding-bottom: 6px" id="pinNumber" type="number">
+                <button type="button" class="btn btn-primary" onclick="checkPin()">Launch</button>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </div><br><br>
+</div>
+
+<footer class="footer-border">
+    <div class="footer">
+        <div class="navbar navbar-expand-sm navbar-light bg-faded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-position">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Accessibility</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Copyright</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Help</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Site map</a></li>
+                    <li class="nav-item"><a class="nav-link footerContent-position" href="#">Terms of use</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-heading">© 2019 Ryan Nguyen</p>
+    </div>
+</footer>
+</body>
+</html>
